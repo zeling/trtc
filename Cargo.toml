@@ -1,0 +1,24 @@
+[package]
+name = "trtc"
+version = "0.1.0"
+authors = ["Zeling Feng <zeling.feng@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[lib]
+name = "trtc"
+path = "src/lib.rs"
+
+[[bin]]
+name = "trtc"
+src = "src/main.rs"
+
+[[test]]
+name = "trtc"
+harness = false
+
+[dev-dependencies]
+cucumber = { package = "cucumber_rust", version = "^0.6.0" }
